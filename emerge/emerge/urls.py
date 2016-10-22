@@ -3,10 +3,10 @@ emerge URL Configuration
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from django.contrib.auth.models import User
-from rest_framework import routers, serializers, viewsets
+from rest_framework.urlpatterns import format_suffix_patterns
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^', include('emerge_api.urls')),
 ]

@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models        import Hospital
+
+from .models import Hospital
 
 HOSPITAL_FIELDS = ('id',
                    'created',
@@ -11,9 +12,7 @@ HOSPITAL_FIELDS = ('id',
                    'business_hours')
 
 
-class SnippetSerializer(serializers.HyperlinkedModelSerializer):
-    created = serializers.ReadOnlyField(source='created')
-    id      = serializers.ReadOnlyField(source='id')
+class HospitalSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model  = Hospital
