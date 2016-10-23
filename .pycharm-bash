@@ -1,0 +1,3 @@
+source ~/.bashrc
+source /Users/arunswaminathan/Workspace/VirtualEnv/EmergeWeb/bin/activate
+source /Users/arunswaminathan/Workspace/VirtualEnv/EmergeWeb/bin/postactivate
