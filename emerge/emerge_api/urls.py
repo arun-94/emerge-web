@@ -7,6 +7,9 @@ urlpatterns = format_suffix_patterns([
     url(r'^hospitals/$',
         views.HospitalList.as_view(),
         name='hospital-list'),
+    url(r'^survey/(?P<pk>(\w+))/$',
+        views.SurveyDetail.as_view(),
+        name='survey-detail'),
 ])
 
 urlpatterns += [
